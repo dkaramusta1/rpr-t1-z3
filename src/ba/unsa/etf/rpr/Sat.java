@@ -5,12 +5,12 @@ public class Sat {
     public Sat(int sati, int minute, int sekunde) {
         postavi(sati,minute,sekunde);
     }
-    void postavi(int sati, int minute, int sekunde) {
+    public void postavi(int sati, int minute, int sekunde) {
         this.sati = sati;
         this.minute = minute;
         this.sekunde = sekunde;
     }
-    void sljedeci() {
+    public void sljedeci() {
         sekunde = sekunde + 1;
         if (sekunde == 60) {
             sekunde = 0;
@@ -24,7 +24,7 @@ public class Sat {
             sati = 0;
         }
     }
-    void prethodni() {
+    public void prethodni() {
         sekunde = sekunde - 1;
         if (sekunde == -1) {
             sekunde = 59;
@@ -38,7 +38,7 @@ public class Sat {
             sati = 23;
         }
     }
-    void pomjeriZa(int pomak) {
+    public void pomjeriZa(int pomak) {
         if (pomak > 0) {
             for (int i = 0; i < pomak; i++){
                 sljedeci();
@@ -50,18 +50,16 @@ public class Sat {
             }
         }
     }
-    final void ispisi() {
+    public final void ispisi() {
         System.out.println(sati + ":" + minute + ":" + sekunde);
     }
-    final int getSati()  {
+    public final int getSati()  {
         return sati;
     }
-    final int getMinute()  {
+    public final int getMinute()  {
         return minute;
     }
-    final int getSekunde()  {
+    public final int getSekunde()  {
         return sekunde;
     }
-
-
 }
