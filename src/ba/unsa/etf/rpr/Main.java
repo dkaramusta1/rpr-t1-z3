@@ -6,5 +6,7 @@ public class Main {
 	// write your code here
         Sat s = new Sat(15,30,45);
         s.ispisi();
+        s.sljedeci();
+        s.ispisi();
     }
 }
