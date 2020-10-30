@@ -38,6 +38,18 @@ public class Sat {
             sati = 23;
         }
     }
+    void pomjeriZa(int pomak) {
+        if (pomak > 0) {
+            for (int i = 0; i < pomak; i++){
+                sljedeci();
+            }
+        }
+        else {
+            for (int i = 0; i < -pomak; i++){
+                prethodni();
+            }
+        }
+    }
     final void ispisi() {
         System.out.println(sati + ":" + minute + ":" + sekunde);
     }

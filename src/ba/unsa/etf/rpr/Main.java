@@ -10,5 +10,7 @@ public class Main {
         s.ispisi();
         s.prethodni();
         s.ispisi();
+        s.pomjeriZa(15);
+        s.ispisi();
     }
 }
