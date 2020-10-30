@@ -13,5 +13,15 @@ public class Sat {
     final void ispisi() {
         System.out.println(sati + ":" + minute + ":" + sekunde);
     }
+    final int getSati()  {
+        return sati;
+    }
+    final int getMinute()  {
+        return minute;
+    }
+    final int getSekunde()  {
+        return sekunde;
+    }
+
 
 }
