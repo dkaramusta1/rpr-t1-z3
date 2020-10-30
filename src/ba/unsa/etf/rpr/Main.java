@@ -8,5 +8,7 @@ public class Main {
         s.ispisi();
         s.sljedeci();
         s.ispisi();
+        s.prethodni();
+        s.ispisi();
     }
 }
